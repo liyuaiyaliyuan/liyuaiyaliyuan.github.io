@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>会员主页</title>
+	  <link rel="stylesheet" href="../css/member.css" type="text/css">
+  </head>
+  <body>
+    <h1>欢迎来到会员主页</h1>
+    <h2>个人信息</h2>
+    <p>姓名：张三</p>
+    <p>性别：男</p>
+    <p>年龄：25岁</p>
+    <p>联系方式：13812345678</p>
+    <h2>健身计划</h2>
+    <p >训练目标：增肌</p>
+    <p>训练时间：每周三次，每次1小时</p>
+    <p>饮食建议：高蛋白、低脂肪、低碳水化合物</p>
+    <h2>课程预订</h2>
+    <form>
+      <label for="course">选择课程：</label>
+      <select id="course" name="course">
+        <option value="yoga">瑜伽</option>
+        <option value="boxing">拳击</option>
+        <option value="spinning">室内骑行</option>
+      </select>
+      <br>
+      <label for="date">选择日期：</label>
+      <input type="date" id="date" name="date">
+      <br>
+      <label for="time">选择时间：</label>
+      <input type="time" id="time" name="time">
+      <br>
+      <input type="submit" value="预订">
+    </form>
+  </body>
+</html>

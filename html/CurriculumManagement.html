@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>课程管理页面</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/CurriculumManagement.css">
+</head>
+<body>
+	<header>
+		<h1>课程管理</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="main.html">首页</a></li>
+			<li><a href="../html/Coursepresentation.html">课程列表</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>课程列表</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>课程名称</th>
+						<th>授课教练</th>
+						<th>积分</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>瑜伽课</td>
+						<td>张三</td>
+						<td>3</td>
+						<td>
+							<a href="#">编辑</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>有氧运动课</td>
+						<td>李四</td>
+						<td>4</td>
+						<td>
+							<a href="#">编辑</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>引体向上课</td>
+						<td>王五</td>
+						<td>3</td>
+						<td>
+							<a href="#">编辑</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>有氧自行车</td>
+						<td>许小言</td>
+						<td>3</td>
+						<td>
+							<a href="#">编辑</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2>添加课程</h2>
+			<form>
+				<label for="course_name">课程名称：</label>
+				<input type="text" id="course_name" name="course_name" required><br>
+				<label for="teacher_name">授课教师：</label>
+				<input type="text" id="teacher_name" name="teacher_name" required><br>
+				<label for="credit">学分：</label>
+				<input type="number" id="credit" name="credit" required><br>
+				<button type="submit">添加</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>版权所有 &copy; 2001yuyu</p>
+	</footer>
+</body>
+</html>

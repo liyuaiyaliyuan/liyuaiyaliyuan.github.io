@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>欢迎来到李余的健身房管理网站</title>
+	  <link rel="stylesheet" href="../css/index.css" type="text/css">
+
+  </head>
+  <body>
+    <nav>
+      <a href="main.html">导航页</a>
+      <a href="#">关于我们</a>
+      <a href="#" id="contactBtn">联系我们</a>
+    </nav>
+    
+    <main>
+      <img src="../img/img8.jpg" alt="图片">
+		<div class="floating-text-container">
+  <h1 class="floating-text">欢迎来到李余的健身房管理网站</h1>
+</div>
+	  <div id="contactModal" style="display: none;">
+      <h2>联系方式</h2>
+      <p>电话：1234567890</p>
+      <p>邮箱：example@example.com</p>
+    </div>
+    </main>
+    <script>
+      var contactBtn = document.getElementById("contactBtn");
+      var contactModal = document.getElementById("contactModal");
+      
+      contactBtn.addEventListener("click", function() {
+        contactModal.style.display = "block";
+      });
+      
+      contactModal.addEventListener("mouseleave", function() {
+        contactModal.style.display = "none";
+      });
+    </script>
+  	<footer>
+		<p>版权所有 © 2001 yuyu 四川工业科技学院-2021级软件工程专业&nbsp;李余</p>
+	</footer>
+  </body>
+</html>

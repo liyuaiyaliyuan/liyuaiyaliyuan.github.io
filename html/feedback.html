@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>意见反馈</title>
+	<style>
+	/* 公共样式 */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: rgba(214,166,243,0.5);
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 32px;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		nav li {
+			margin-right: 20px;
+			font-size: 20px;
+		}
+
+		nav li a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 15px;
+		}
+
+		nav li.active a,
+		nav li a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 20px auto;
+			padding: 20px;
+		}
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+
+		label {
+			width: 120px;
+			text-align: right;
+			margin-right: 20px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		input[type="file"] {
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"],
+		input[type="reset"] {
+			display: block;
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-right: 20px;
+		}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+		select {
+			width: 150px;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		option {
+			padding: 10px;
+			border-radius: 3px;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>意见反馈</h1>
+	</header>
+
+	<main>
+		<h2>请填写您的反馈信息</h2>
+		<form>
+			<label>姓名：</label>
+			<input type="text" name="name">
+			<label>邮箱：</label>
+			<input type="email" name="email">
+			<label>联系方式：</label>
+			<input type="tel" name="phone">
+			<label>反馈内容：</label>
+			<textarea name="feedback"></textarea>
+			<label>上传图片：</label>
+			<input type="file" name="image">
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+		</form>
+
+		<h2>课程评价</h2>
+		<form>
+			<label>姓名：</label>
+			<input type="text" name="name">
+			<label>邮箱：</label>
+			<input type="email" name="email">
+			<label>课程名称：</label>
+			<input type="text" name="course">
+			<label>评价内容：</label>
+			<textarea name="comment"></textarea>
+			<label>分值评定：</label>
+			<select name="score">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2001 版权所有</p>
+	</footer>
+</body>
+
+</html>

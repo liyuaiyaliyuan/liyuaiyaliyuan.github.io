@@ -1,0 +1,88 @@
+/* CSS Document */
+body{
+	background-image: url("../img/img20.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#statistics {
+  padding: 20px;
+  background-color: #f5f5f5;
+  background-image: url("../img/img11.jpg");
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stat {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stat h3 {
+  margin-top: 0;
+}
+
+.stat p {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+#lesson-display {
+  max-width: 1410px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#lesson-display h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.lesson {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.lesson img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 160px;
+}
+
+.lesson h3, .lesson p {
+  margin: 10px;
+}
+
+.lesson h3 {
+  font-size: 20px;
+}
+
+.lesson p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+#backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+      }

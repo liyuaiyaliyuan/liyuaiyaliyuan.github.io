@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>财务管理</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/Financialmanagement.css" type="text/css">
+</head>
+<body>
+	<header>
+		<h1>财务管理系统</h1>
+	</header>
+	<main>
+		<section id="account">
+			<h2>账户管理</h2>
+			<form>
+				<label for="name">姓名：</label>
+				<input type="text" id="name" name="name">
+				<label for="balance">余额：</label>
+				<input type="text" id="balance" name="balance">
+				<button type="submit">添加账户</button>
+			</form>
+			<table>
+				<thead>
+					<tr>
+						<th>姓名</th>
+						<th>余额</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>张三</td>
+						<td>1000</td>
+						<td><button>删除</button></td>
+					</tr>
+					<tr>
+						<td>李四</td>
+						<td>2000</td>
+						<td><button>删除</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="transaction">
+			<h2>交易记录</h2>
+			<form>
+				<label for="date">日期：</label>
+				<input type="date" id="date" name="date">
+				<label for="type">类型：</label>
+				<select id="type" name="type">
+					<option value="income">收入</option>
+					<option value="expense">支出</option>
+				</select>
+				<label for="amount">金额：</label>
+				<input type="text" id="amount" name="amount">
+				<button type="submit">添加记录</button>
+			</form>
+			<table>
+				<thead>
+					<tr>
+						<th>日期</th>
+						<th>类型</th>
+						<th>金额</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2021-01-01</td>
+						<td>收入</td>
+						<td>1000</td>
+						<td><button>删除</button></td>
+					</tr>
+					<tr>
+						<td>2021-01-02</td>
+						<td>支出</td>
+						<td>500</td>
+						<td><button>删除</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="report">
+			<h2>报表分析</h2>
+			<div id="chart"></div>
+			<table>
+				<thead>
+					<tr>
+						<th>日期</th>
+						<th>收入</th>
+						<th>支出</th>
+						<th>结余</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2021-01-01</td>
+						<td>1000</td>
+						<td>500</td>
+						<td>500</td>
+					</tr>
+					<tr>
+						<td>2021-01-02</td>
+						<td>800</td>
+						<td>600</td>
+						<td>700</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>版权所有 © 2001 财务管理系统</p>
+	</footer>
+</body>
+</html>

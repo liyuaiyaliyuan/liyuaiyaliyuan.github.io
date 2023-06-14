@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>健身房数据统计</title>
+	<link rel="stylesheet" href="../css/Datastatistics.css">
+</head>
+
+<body>
+	
+	<div id="statistics">
+  <h2>健身房数据统计</h2>
+  <div class="stats-container">
+    <div class="stat">
+      <h3>会员数量</h3>
+      <p>1000</p>
+    </div>
+    <div class="stat">
+      <h3>器材使用率</h3>
+      <p>60%</p>
+    </div>
+    <div class="stat">
+      <h3>健身课程参与人数</h3>
+      <p>200</p>
+    </div>
+  </div>
+</div>
+	<div id="lesson-display">
+		<div id="contactModal" style="display: none;"></div>
+	
+  <h2>热门健身课程</h2>
+  <div class="lesson">
+    <img src="../img/img12.jpg" alt="lesson1">
+    <h3>瑜伽课</h3>
+    <p>瑜伽课程简介</p>
+  </div>
+  <div class="lesson">
+    <img src="../img/img13.jpg" alt="lesson2">
+    <h3>健身器械课</h3>
+    <p>器械课程简介</p>
+  </div>
+  <div class="lesson">
+    <img src="../img/img14.jpg" alt="lesson3">
+    <h3>有氧运动课</h3>
+    <p>有氧运动课程简介</p>
+  </div>
+  <div class="lesson">
+    <img src="../img/img15.jpg" alt="lesson3">
+    <h3>普拉提课</h3>
+    <p>普拉提课程简介</p>
+  </div>
+  <div class="lesson">
+    <img src="../img/img16.jpg" alt="lesson3">
+    <h3>引体向上课</h3>
+    <p>肌肉构建课程简介</p>
+  </div>	
+  <div class="lesson">
+    <img src="../img/img17.jpg" alt="lesson3">
+    <h3>训练腿部肌肉</h3>
+    <p>肌肉构建课程简介</p>
+  </div>	
+  <div class="lesson">
+    <img src="../img/img18.jpg" alt="lesson3">
+    <h3>爵士舞</h3>
+    <p>爵士舞课程简介</p>
+  </div>	
+  <div class="lesson">
+    <img src="../img/img19.jpg" alt="lesson3">
+    <h3>有氧自行车</h3>
+    <p>有氧自行车课程简介</p>
+  </div>	
+	<button id="backToTop">回到顶部</button>
+		
+	<script>
+      var contactBtn = document.getElementById("contactBtn");
+      var contactModal = document.getElementById("contactModal");
+      var backToTopBtn = document.getElementById("backToTop");
+
+      contactBtn.addEventListener("click", function() {
+        contactModal.style.display = "block";
+      });
+
+      contactModal.addEventListener("mouseleave", function() {
+        contactModal.style.display = "none";
+      });
+
+      window.onscroll = function() {
+        if (window.scrollY > 100) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      };
+
+      backToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/img7.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+form {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color:rgba(96,203,124,0.5);
+
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 0.5em;
+}
+
+input[type="date"], input[type="time"], select {
+  padding: 0.5em;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+p{
+	text-align: center;
+}

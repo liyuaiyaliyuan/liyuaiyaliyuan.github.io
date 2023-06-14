@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>健身房设备管理页面</title>
+	<link rel="stylesheet" href="../css/equipment.css" type="text/css">
+</head>
+<body>
+	<h1>健身房设备管理页面</h1>
+	<form>
+		<label for="equipment-name">设备名称：</label>
+		<input type="text" id="equipment-name" name="equipment-name"><br><br>
+		<label for="equipment-type">设备类型：</label>
+		<select id="equipment-type" name="equipment-type">
+			<option value="有氧">有氧</option>
+			<option value="力量">力量</option>
+			<option value="器械">器械</option>
+		</select><br><br>
+		<label for="equipment-status">设备状态：</label>
+		<select id="equipment-status" name="equipment-status">
+			<option value="正常">正常</option>
+			<option value="维修">维修</option>
+			<option value="报废">报废</option>
+		</select><br><br>
+		<input type="submit" value="添加设备">
+	</form>
+	<table>
+		<thead>
+			<tr>
+				<th>设备名称</th>
+				<th>设备类型</th>
+				<th>设备状态</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>哑铃</td>
+				<td>力量</td>
+				<td>正常</td>
+				<td><a href="/edit/{{equipment.id}}">编辑</a> | <a href="/delete/{{equipment.id}}">删除</a></td>
+			</tr>
+			<tr>
+				<td>健身车</td>
+				<td>有氧</td>
+				<td>正常</td>
+				<td><a href="/edit/{{equipment.id}}">编辑</a> | <a href="/delete/{{equipment.id}}">删除</a></td>
+			</tr>
+			<tr>
+				<td>跑步机</td>
+				<td>有氧</td>
+				<td>正常</td>
+				<td><a href="/edit/{{equipment.id}}">编辑</a> | <a href="/delete/{{equipment.id}}">删除</a></td>
+			</tr><tr>
+				<td>综合训练器</td>
+				<td>机械</td>
+				<td>维修</td>
+				<td><a href="/edit/{{equipment.id}}">编辑</a> | <a href="/delete/{{equipment.id}}">删除</a></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

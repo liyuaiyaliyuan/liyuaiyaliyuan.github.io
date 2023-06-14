@@ -1,0 +1,118 @@
+/* 公共样式 */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: rgba(214,166,243,0.5);
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 32px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav li {
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+nav li.active a,
+nav li a:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+main {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+label {
+	width: 120px;
+	text-align: right;
+	margin-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type="file"] {
+	margin-bottom: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	display: block;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+select {
+	width: 150px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+option {
+	padding: 10px;
+	border-radius: 3px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}

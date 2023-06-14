@@ -1,0 +1,27 @@
+/* CSS Document */
+body{
+background-color: rgba(188,167,168,0.6);
+}
+.course {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+}
+
+.course img {
+width: 300px;
+height: 200px;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.course h3 {
+text-align: center;
+}
+
+.course p {
+text-align: center;
+max-width: 70%;
+margin-bottom: 20px;
+}
