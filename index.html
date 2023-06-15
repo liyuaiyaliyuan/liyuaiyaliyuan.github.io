@@ -35,13 +35,21 @@
   			flex-wrap: wrap;
 		}
 		.box {
-  			width: 40%;
+  			width: calc(50% - 10px);
 			height: 30%;
 			background-color: #F181D5;
 			margin: 20px auto;
 			border-radius: 10px;
 			text-underline-position: right;
 			padding: 10px;
+			
+  			margin-bottom: 20px;
+
+		@media (max-width: 768px) { /* 在屏幕宽度小于等于 768px 时应用以下样式 */
+		  .box {
+		    width: 100%;
+		  }
+		}
 		}
 		.box>ul>li{
 			list-style: none;
